@@ -1,7 +1,14 @@
+import "./Square.css";
 
-
-function Square({value}) {
-    return <button className="square">{value}</button>;
+function Square({ value }) {
+  function handelClick() {
+    console.log("clicked");
+  }
+  return (
+    <button className="square" onClick={handelClick}>
+      {value}
+    </button>
+  );
 }
 
 export default Square;
